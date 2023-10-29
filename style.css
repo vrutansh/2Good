@@ -14,13 +14,27 @@ html,body{
     height: 100%;
 }
 
+body{
+    background: #edeaead7;
+}
+
+#cursor{
+    height:180px;
+    width:180px;
+    background-color: #ce7070d7;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0);
+    /* transform: scale(0); */
+}
+
 #page1{
    padding-top: 19vh; 
    padding: 0, 1vw;
    min-height:100vh;
    position: relative;
    width: 100%;
-   background-color:mediumturquoise;
+   
    
 }
 
@@ -59,7 +73,7 @@ html,body{
 }
 
 #page2{
-    height: 100vh;
+    min-height: 100vh;
     width:100%;
     padding: 3vw 1vw;
     position: relative;
@@ -73,6 +87,10 @@ html,body{
     width: 31.5%;
     /* background-color: red; */
     overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -83,11 +101,46 @@ html,body{
     scale: 1.1;
 }
 
-#page3{
-    height: 100vh;
-    width: 100%;
+.elem .dets{
+    height: 60px;
+    border-radius: 45px;
+    width: 70%;
+    position: absolute;
+    z-index: 9;
+    background-color: #e2fabf;
+}
+
+.elem .dets:hover{
+    height: 200px;
 
 }
+
+#page3{
+   min-height: 120vh;
+   position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.child{
+    height: 55vh;
+    width: 38vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child img{
+    height: 100%;
+
+    
+}
+
 
 @media(max-width:600px){
     #page1{
@@ -121,4 +174,35 @@ html,body{
         scale: 1;
         transform: translate(-50%,-50%);
     }
+
+    
+#page2{
+    min-height: 100vh;
+    width:100%;
+    padding: 5vw 3vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#page2 .elem{
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    overflow: hidden;
+    margin-bottom: 3vw;
+
+}
+
+.elem .dets{
+    height: 40px;
+    border-radius: 45px;
+    width: 70%;
+    position: absolute;
+    z-index: 9;
+    background-color: #e2fabf;
+}
+
 }
