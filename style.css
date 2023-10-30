@@ -201,6 +201,61 @@ body{
 
 
 @media(max-width:600px){
+
+    #nav{
+        /* height: 100px; */
+        width: 100%;
+        /* background-color: rgb(219, 127, 127); */
+        position: fixed;
+        z-index: 99;
+        padding:15px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    
+    #nav #nav-part2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 45px;
+    }
+    
+    #links{
+        padding:11px;
+        display:none,
+    }
+    
+    #nav #nav-part1{
+        /* background-color: aqua; */
+        height: 67px;
+        overflow: hidden;
+    }
+    #nav-part1 svg{
+        display: block;
+        height: 67px;
+        width: 79px;
+    }
+
+    #nav #twogoodlogo{
+        height: 40px;
+        margin-left: -21px;
+    }
+    
+    #icons{
+        padding: 7px;
+        border-radius: 50px;
+        background-color: #f7f7f7;
+    }
+    
+    #nav-part2 #icons i{
+        font-size: 14px;
+        margin:0 22px;
+        font-weight: 150;
+    }
+
+
     #page1{
         min-height: 70vh;
         padding-top: 25vh; 
@@ -262,5 +317,33 @@ body{
     z-index: 9;
     background-color: #e2fabf;
 }
+
+
+#page3{
+    min-height: 120vh;
+    position: relative;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+ 
+ }
+ 
+ .child{
+     height: 55vh;
+     width: 88vw;
+     position: relative;
+     padding: 16vw;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .child img{
+     height: 100%
+ }
+
+ 
 
 }
