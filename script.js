@@ -23,6 +23,7 @@ function loadingH1(){
     })
 }
 
+
 //for cursor on the video 
 function vidAnimation(){
     var video = document.querySelector("#video-container")
