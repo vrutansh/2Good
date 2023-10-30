@@ -1,3 +1,5 @@
+
+//scroll for the page
 function locomotiveAnimation() {
     gsap.registerPlugin(ScrollTrigger);
   
@@ -38,7 +40,7 @@ function locomotiveAnimation() {
     ScrollTrigger.refresh();
   }
   
-  
+  //navbar logo stuff
   function navbarAnimation() {
     gsap.to("#nav-part1 svg", {
       transform: "translateY(-100%)",
@@ -63,8 +65,7 @@ function locomotiveAnimation() {
     });
   }
  
-
-
+  
 //for the h1 in pg1
 function loadingH1(){
     gsap.from("#page1 h1",{
